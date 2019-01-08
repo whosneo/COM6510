@@ -4,37 +4,42 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="uk.ac.shef.oak.com6510.ImageExtraActivity">
+    tools:context="uk.ac.shef.oak.com6510.InfoActivity">
 
-    <ImageView
-        android:id="@+id/extra_picture"
-        android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"/>
-
-    <TextView
-        android:id="@+id/extra_title"
+    <EditText
+        android:id="@+id/edit_text_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
-        android:textSize="16dp"/>
+        android:hint="Title"
+        android:inputType="text" />
 
-    <TextView
-        android:id="@+id/extra_description"
+    <EditText
+        android:id="@+id/edit_text_description"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
-        android:textSize="16dp"/>
+        android:hint="Description"
+        android:inputType="textMultiLine" />
 
-    <TextView
-        android:id="@+id/extra_date"
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_info"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="32dp"
-        android:textSize="16dp"/>
+        android:layout_marginBottom="8dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp" />
+
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Save" />
 
 </LinearLayout>
